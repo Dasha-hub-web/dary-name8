@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Незабудки — Цветочный магазин</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="header-left">
+            <a href="/" class="logo">НЕЗАБУДКИ</a>
+            
+        </div>
+        <div class="header-icons">
+            <button class="icon-btn" aria-label="Поиск">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <circle cx="11" cy="11" r="8"></circle>
+                    <path d="m21 21-4.3-4.3"></path>
+                </svg>
+            </button>
+            <button class="icon-btn" aria-label="Избранное">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+                </svg>
+            </button>
+            <button onclick="window.location.href='cart.html';" class="icon-btn" aria-label="Корзина">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <circle cx="9" cy="21" r="1"></circle>
+                    <circle cx="20" cy="21" r="1"></circle>
+                    <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+                </svg>
+            </button>
+            <button onclick="window.location.href='ac1.html';" class="icon-btn" aria-label="Аккаунт">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                    <circle cx="12" cy="7" r="4"></circle>
+                </svg>
+            </button>
+            <button onclick="window.location.href='wedding-bouquets.html';" class="icon-btn" aria-label="Меню">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <line x1="3" y1="12" x2="21" y2="12"></line>
+                    <line x1="3" y1="6" x2="21" y2="6"></line>
+                    <line x1="3" y1="18" x2="21" y2="18"></line>
+                </svg>
+            </button>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" style="background-image: url('flower fon.jpg'); background-size: cover; background-position: center;">
+        <div class="hero-content" style="background: rgba(242, 240, 228, 0.75); padding: 40px 60px; border-radius: 16px;">
+            <h1 class="hero-title">набери цветы</h1>
+            <p class="hero-subtitle">Здесь можно собрать любимые сорта цветов</p>
+            <a href="#" class="hero-btn">набрать</a>
+        </div>
+        <button class="hero-nav hero-nav-prev" aria-label="Назад">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polyline points="15 18 9 12 15 6"></polyline>
+            </svg>
+        </button>
+        <button class="hero-nav hero-nav-next" aria-label="Вперед">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polyline points="9 18 15 12 9 6"></polyline>
+            </svg>
+        </button>
+    </section>
+
+    <!-- Popular Section -->
+    <section class="popular">
+        <h2 class="section-title">популярное</h2>
+        <div class="products-grid">
+            <!-- Карточка 1 -->
+            <div class="product-card">
+                <div class="product-bg-1"></div>
+                <div class="product-bg-2"></div>
+                <div onclick="window.location.href='Product.html';" class="product-content">
+                    <div class="product-image">
+                        <img src="flower1.jpg" alt="Букет цветов">
+                    </div>
+                    <div class="product-info">
+                        <div class="product-header">
+                            <div class="product-text">
+                                <h3 class="product-name">Пионовый</h3>
+                                <p class="product-desc">13 бутонов</p>
+                            </div>
+                            <span class="product-price">$250</span>
+                        </div>
+                        <button class="product-btn">
+                            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+                            </svg>
+                            <span>в корзину</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Карточка 2 -->
+            <div class="product-card">
+                <div class="product-bg-1"></div>
+                <div class="product-bg-2"></div>
+                <div onclick="window.location.href='Product.html';" class="product-content">
+                    <div class="product-image">
+                        <img src="flower1.2.jpg" alt="Букет цветов">
+                    </div>
+                    <div class="product-info">
+                        <div class="product-header">
+                            <div class="product-text">
+                                <h3 class="product-name">Розовый</h3>
+                                <p class="product-desc">21 бутон</p>
+                            </div>
+                            <span class="product-price">$180</span>
+                        </div>
+                        <button class="product-btn">
+                            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+                            </svg>
+                            <span>в корзину</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Карточка 3 -->
+            <div class="product-card">
+                <div class="product-bg-1"></div>
+                <div class="product-bg-2"></div>
+                <div onclick="window.location.href='Product.html';" class="product-content">
+                    <div class="product-image">
+                        <img src="flower3.jpg" alt="Букет цветов">
+                    </div>
+                    <div class="product-info">
+                        <div class="product-header">
+                            <div class="product-text">
+                                <h3 class="product-name">Астрелия</h3>
+                                <p class="product-desc">9 бутонов</p>
+                            </div>
+                            <span class="product-price">$320</span>
+                        </div>
+                        <button class="product-btn">
+                            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+                            </svg>
+                            <span>в корзину</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Карточка 4 -->
+            <div class="product-card">
+                <div class="product-bg-1"></div>
+                <div class="product-bg-2"></div>
+                <div onclick="window.location.href='Product.html';" class="product-content">
+                    <div class="product-image">
+                        <img src="flower5.jpg" alt="Букет цветов">
+                    </div>
+                    <div class="product-info">
+                        <div class="product-header">
+                            <div class="product-text">
+                                <h3 class="product-name">Лавандов</h3>
+                                <p class="product-desc">17 бутонов</p>
+                            </div>
+                            <span class="product-price">$290</span>
+                        </div>
+                        <button class="product-btn">
+                            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+                            </svg>
+                            <span>в корзину</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Карточка 5 -->
+            <div class="product-card">
+                <div class="product-bg-1"></div>
+                <div class="product-bg-2"></div>
+                <div onclick="window.location.href='Product.html';" class="product-content">
+                    <div class="product-image">
+                        <img src="flower6.jpg" alt="Букет цветов">
+                    </div>
+                    <div class="product-info">
+                        <div class="product-header">
+                            <div class="product-text">
+                                <h3 class="product-name">Орхидея</h3>
+                                <p class="product-desc">11 бутонов</p>
+                            </div>
+                            <span class="product-price">$450</span>
+                        </div>
+                        <button class="product-btn">
+                            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+                            </svg>
+                            <span>в корзину</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Карточка 6 -->
+            <div class="product-card">
+                <div class="product-bg-1"></div>
+                <div class="product-bg-2"></div>
+                <div onclick="window.location.href='Product.html';" class="product-content">
+                    <div class="product-image">
+                        <img src="flower7.jpg" alt="Букет цветов">
+                    </div>
+                    <div class="product-info">
+                        <div class="product-header">
+                            <div class="product-text">
+                                <h3 class="product-name">Тюльпаны</h3>
+                                <p class="product-desc">25 бутонов</p>
+                            </div>
+                            <span class="product-price">$150</span>
+                        </div>
+                        <button class="product-btn">
+                            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+                            </svg>
+                            <span>в корзину</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Карточка 7 -->
+            <div class="product-card">
+                <div class="product-bg-1"></div>
+                <div class="product-bg-2"></div>
+                <div onclick="window.location.href='Product.html';" class="product-content">
+                    <div class="product-image">
+                        <img src="flower8.jpg" alt="Букет цветов">
+                    </div>
+                    <div class="product-info">
+                        <div class="product-header">
+                            <div class="product-text">
+                                <h3 class="product-name">Ирисовый</h3>
+                                <p class="product-desc">7 бутонов</p>
+                            </div>
+                            <span class="product-price">$200</span>
+                        </div>
+                        <button class="product-btn">
+                            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+                            </svg>
+                            <span>в корзину</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Карточка 8 -->
+            <div class="product-card">
+                <div class="product-bg-1"></div>
+                <div class="product-bg-2"></div>
+                <div onclick="window.location.href='Product.html';" class="product-content">
+                    <div class="product-image">
+                        <img src="flower9.jpg" alt="Букет цветов">
+                    </div>
+                    <div class="product-info">
+                        <div class="product-header">
+                            <div class="product-text">
+                                <h3 class="product-name">Ромашков</h3>
+                                <p class="product-desc">19 бутонов</p>
+                            </div>
+                            <span class="product-price">$120</span>
+                        </div>
+                        <button class="product-btn">
+                            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+                            </svg>
+                            <span>в корзину</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Карточка 9 -->
+            <div class="product-card">
+                <div class="product-bg-1"></div>
+                <div class="product-bg-2"></div>
+                <div onclick="window.location.href='Product.html';" class="product-content">
+                    <div class="product-image">
+                        <img src="flower10.jpg" alt="Букет цветов">
+                    </div>
+                    <div class="product-info">
+                        <div class="product-header">
+                            <div class="product-text">
+                                <h3 class="product-name">Калловый</h3>
+                                <p class="product-desc">15 бутонов</p>
+                            </div>
+                            <span class="product-price">$380</span>
+                        </div>
+                        <button class="product-btn">
+                            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+                            </svg>
+                            <span>в корзину</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Карточка 10 -->
+            <div class="product-card">
+                <div class="product-bg-1"></div>
+                <div class="product-bg-2"></div>
+                <div onclick="window.location.href='Product.html';" class="product-content">
+                    <div class="product-image">
+                        <img src="flower11.jpg" alt="Букет цветов">
+                    </div>
+                    <div class="product-info">
+                        <div class="product-header">
+                            <div class="product-text">
+                                <h3 class="product-name">Лиловый</h3>
+                                <p class="product-desc">23 бутона</p>
+                            </div>
+                            <span class="product-price">$170</span>
+                        </div>
+                        <button class="product-btn">
+                            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+                            </svg>
+                            <span>в корзину</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Карточка 11 -->
+            <div class="product-card">
+                <div class="product-bg-1"></div>
+                <div class="product-bg-2"></div>
+                <div onclick="window.location.href='Product.html';" class="product-content">
+                    <div class="product-image">
+                        <img src="flower12.jpg" alt="Букет цветов">
+                    </div>
+                    <div class="product-info">
+                        <div class="product-header">
+                            <div class="product-text">
+                                <h3 class="product-name">Георгины</h3>
+                                <p class="product-desc">12 бутонов</p>
+                            </div>
+                            <span class="product-price">$340</span>
+                        </div>
+                        <button class="product-btn">
+                            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+                            </svg>
+                            <span>в корзину</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Карточка 12 -->
+            <div class="product-card">
+                <div class="product-bg-1"></div>
+                <div class="product-bg-2"></div>
+                <div onclick="window.location.href='Product.html';" class="product-content">
+                    <div class="product-image">
+                        <img src="flower13.jpg" alt="Букет цветов">
+                    </div>
+                    <div class="product-info">
+                        <div class="product-header">
+                            <div class="product-text">
+                                <h3 class="product-name">Гортензия</h3>
+                                <p class="product-desc">8 бутонов</p>
+                            </div>
+                            <span class="product-price">$280</span>
+                        </div>
+                        <button class="product-btn">
+                            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+                            </svg>
+                            <span>в корзину</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <button class="product-btn more-btn" style="font-size:14.4px; padding:18px 48px; background-color:#FAFFD8; color:#515915; border:2px solid #515915; font-weight:600; letter-spacing:2px; box-shadow:0 4px 15px rgba(0,0,0,0.12); border-radius:30px; text-transform:uppercase; transition:all 0.3s ease;">
+            <span>ЕЩЁ БУКЕТЫ</span>
+        </button>
+    </section>
+
+    <!-- About Section -->
+    <section class="about">
+        <div class="about-content">
+            <h2 class="about-title">НЕЗАБУДКИ</h2>
+            <p class="about-text">
+                Мы — цветочный магазин в Санкт-Петербурге, который заботится о каждом букете. 
+                Создаем композиции с любовью и вниманием к деталям. Доставляем свежие цветы 
+                по всему городу, сохраняя их красоту и аромат.
+            </p>
+            <a href="#" class="about-link">Узнать больше о нас →</a>
+        </div>
+        <div class="about-images">
+            <div class="about-main-image" style="background-image: url('flower grey.jpg'); background-size: cover; background-position: center;"></div>
+        </div>
+    </section>
+
+    <!-- Cards Section -->
+    <section class="cards">
+        <div class="card-large" style="background-image: url('carta.jpg'); background-size: cover; background-position: center; height: 400px;"></div>
+    </section>
+
+    <!-- Reviews Section -->
+    <section class="reviews">
+        <h2 class="section-title">ОТЗЫВЫ</h2>
+        <p class="reviews-subtitle">Мы ценим каждое мнение о нашем магазине</p>
+        <div class="reviews-list">
+            <div class="review-card">
+                <div class="review-avatar">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#5a5a2a" stroke-width="1.5">
+                        <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                        <circle cx="12" cy="7" r="4"></circle>
+                    </svg>
+                </div>
+                <div class="review-content">
+                    <p class="review-author">Анна М.</p>
+                    <p class="review-text">Заказывала букет на день рождения мамы — просто восторг! Цветы свежие, упаковка изумительная. Доставили точно в срок. Теперь только к вам!</p>
+                </div>
+            </div>
+            <div class="review-card">
+                <div class="review-avatar">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#5a5a2a" stroke-width="1.5">
+                        <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                        <circle cx="12" cy="7" r="4"></circle>
+                    </svg>
+                </div>
+                <div class="review-content">
+                    <p class="review-author">Екатерина С.</p>
+                    <p class="review-text">Свадебный букет превзошёл все ожидания! Пионы были невероятно нежными, держались свежими всё торжество. Спасибо за внимание к деталям!</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq">
+        <h2 class="section-title">ЧАСТЫЕ ВОПРОСЫ</h2>
+        <div class="faq-list">
+            <div class="faq-item">
+                <span class="faq-question">Как оформить заказ?</span>
+                <span class="faq-toggle">+</span>
+            </div>
+            <div class="faq-item">
+                <span class="faq-question">Какие способы оплаты принимаете?</span>
+                <span class="faq-toggle">+</span>
+            </div>
+            <div class="faq-item">
+                <span class="faq-question">Как быстро осуществляется доставка?</span>
+                <span class="faq-toggle">+</span>
+            </div>
+            <div class="faq-item">
+                <span class="faq-question">Можно ли заказать индивидуальный букет?</span>
+                <span class="faq-toggle">+</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-brand">
+                <h3 class="footer-logo">НЕЗАБУДКИ</h3>
+            </div>
+            
+            <div class="footer-info">
+                <div class="footer-row">
+                    <span>Санкт-Петербург</span>
+                    <span>Работаем 10:00-21:00</span>
+                </div>
+                <div class="footer-row">
+                    <a href="mailto:Nezabudki@mail.ru" class="footer-link">Nezabudki@mail.ru</a>
+                    <a href="tel:+79954345454" class="footer-link">+7 995 434 54</a>
+                    <a href="#" class="footer-link">Telegram</a>
+                </div>
+            </div>
+
+            <nav class="footer-nav">
+                <a href="#" class="footer-nav-link">Программа лояльности</a>
+                <a href="#" class="footer-nav-link">Блог</a>
+                <a href="#" class="footer-nav-link">Отзывы</a>
+                <a href="#" class="footer-nav-link">Контакты</a>
+            </nav>
+        </div>
+    </footer>
+</body>
+</html>

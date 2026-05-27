@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Корзина — Незабудки</title>
+    <link rel="stylesheet" href="cart.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="header-left">
+            <a href="/" class="logo">НЕЗАБУДКИ</a>
+            
+        </div>
+        <div class="header-icons">
+            <button onclick="window.location.href='index.html';" class="icon-btn" aria-label="Поиск">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <circle cx="11" cy="11" r="8"></circle>
+                    <path d="m21 21-4.3-4.3"></path>
+                </svg>
+            </button>
+            <button class="icon-btn" aria-label="Избранное">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+                </svg>
+            </button>
+            <button onclick="window.location.href='cart.html';" class="icon-btn" aria-label="Корзина">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <circle cx="9" cy="21" r="1"></circle>
+                    <circle cx="20" cy="21" r="1"></circle>
+                    <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+                </svg>
+            </button>
+            <button onclick="window.location.href='ac1.html';" class="icon-btn" aria-label="Аккаунт">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                    <circle cx="12" cy="7" r="4"></circle>
+                </svg>
+            </button>
+            <button onclick="window.location.href='wedding-bouquets.html';" class="icon-btn" aria-label="Меню">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <line x1="3" y1="12" x2="21" y2="12"></line>
+                    <line x1="3" y1="6" x2="21" y2="6"></line>
+                    <line x1="3" y1="18" x2="21" y2="18"></line>
+                </svg>
+            </button>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <h1 class="page-title">КОРЗИНА</h1>
+
+        <!-- Cart Items -->
+        <div class="cart-items">
+            <!-- Item 1 -->
+            <div class="cart-item">
+                <div onclick="window.location.href='Product.html';" class="item-image">
+                    <img src="flower2.jpg" alt="Букет цветов">
+                </div>
+                <div class="item-details">
+                    <div class="item-header">
+                        <span class="item-name">Карамель</span>
+                        <span class="item-price">$250</span>
+                        <button class="delete-btn" aria-label="Удалить">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="3 6 5 6 21 6"></polyline>
+                                <path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"></path>
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="item-size">
+                        <span class="size-label">Размер товара</span>
+                        <div class="size-options">
+                            <span class="size-option">S</span>
+                            <span class="size-option active">M</span>
+                            <span class="size-option">L</span>
+                        </div>
+                    </div>
+                    <div class="item-quantity">
+                        <span>1 шт</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Item 2 -->
+            <div class="cart-item">
+                <div onclick="window.location.href='Product.html';" class="item-image">
+                    <img src="flower1.2.jpg" alt="Букет цветов">
+                </div>
+                <div class="item-details">
+                    <div class="item-header">
+                        <span class="item-name">Нежность</span>
+                        <span class="item-price">$300</span>
+                        <button class="delete-btn" aria-label="Удалить">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="3 6 5 6 21 6"></polyline>
+                                <path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"></path>
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="item-size">
+                        <span class="size-label">Размер товара</span>
+                        <div class="size-options">
+                            <span class="size-option">S</span>
+                            <span class="size-option">M</span>
+                            <span class="size-option active">L</span>
+                        </div>
+                    </div>
+                    <div class="item-quantity">
+                        <span>1 шт</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Total -->
+        <div class="cart-total">
+            <span class="total-label">ИТОГО:</span>
+            <span class="total-price">$550</span>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-brand">
+                <h3 class="footer-logo">НЕЗАБУДКИ</h3>
+            </div>
+            
+            <div class="footer-info">
+                <div class="footer-row">
+                    <span>Санкт-Петербург</span>
+                    <span>Работаем 10:00-21:00</span>
+                </div>
+                <div class="footer-row">
+                    <a href="mailto:Nezabudki@mail.ru" class="footer-link">Nezabudki@mail.ru</a>
+                    <a href="tel:+79954345454" class="footer-link">+7 995 434 54</a>
+                    <a href="#" class="footer-link">Telegram</a>
+                </div>
+            </div>
+
+            <nav class="footer-nav">
+                <a href="#" class="footer-nav-link">Программа лояльности</a>
+                <a href="#" class="footer-nav-link">Блог</a>
+                <a href="#" class="footer-nav-link">Отзывы</a>
+                <a href="#" class="footer-nav-link">Контакты</a>
+            </nav>
+        </div>
+    </footer>
+</body>
+</html>

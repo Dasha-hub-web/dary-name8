@@ -1,0 +1,402 @@
+/* account.css */
+
+/* Reset and Base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Georgia', 'Times New Roman', serif;
+    background-color: #f5f3ed;
+    color: #4a4a2a;
+    line-height: 1.6;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Header */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    background-color: #f5f3ed;
+    border-bottom: 1px solid #c4b896;
+}
+
+.header-left {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: 400;
+    letter-spacing: 4px;
+    color: #4a4a2a;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.logo-subtitle {
+    font-size: 11px;
+    color: #7a7a5a;
+    letter-spacing: 1px;
+    text-transform: lowercase;
+}
+
+.header-icons {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.icon-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #4a4a2a;
+    padding: 4px;
+    transition: color 0.2s;
+}
+
+.icon-btn:hover {
+    color: #6b6b3d;
+}
+
+/* Main Content */
+.main-content {
+    flex: 1;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+/* User Info */
+.user-info {
+    margin-bottom: 24px;
+}
+
+.user-name {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 16px;
+    color: #4a4a2a;
+}
+
+.user-name svg {
+    stroke: #4a4a2a;
+}
+
+/* Navigation Grid */
+.nav-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+    margin-bottom: 16px;  /* было 40px → уменьшено */
+}
+
+
+.nav-card {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 14px 20px;
+    background-color: #f9f7e8;
+    border-radius: 24px;
+    text-decoration: none;
+    color: #4a4a2a;
+    font-size: 14px;
+    transition: background-color 0.2s, transform 0.1s;
+    border: 1px solid #e8e4d4;
+}
+
+.nav-card:hover {
+    background-color: #f0edd8;
+    transform: translateY(-1px);
+}
+
+.nav-card svg {
+    stroke: #4a4a2a;
+    flex-shrink: 0;
+}
+
+/* Products Grid */
+.products-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    width: 100%;
+    justify-items: center;
+}
+
+/* Product Card — уменьшено ещё на 15% (итого ~28% от оригинала) */
+.product-card {
+    width: 100%;
+    max-width: 246px;        /* было 289px → 289 × 0.85 = 246px */
+    position: relative;
+}
+
+/* Зелёный фон-эллипс — уменьшено ещё на 15% */
+.product-bg-1 {
+    position: absolute;
+    bottom: 44px;            /* было 52px → 52 × 0.85 ≈ 44px */
+    left: 0;
+    right: 0;
+    height: 105px;           /* было 124px → 124 × 0.85 ≈ 105px */
+    width: 100%;
+    background-color: #8fa85a;
+    border-radius: 50%;
+    z-index: 1;
+}
+
+.product-bg-2 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 105px;           /* было 124px → 105px */
+    background-color: #8fa85a;
+    border-radius: 13px;     /* было 15px → 15 × 0.85 ≈ 13px */
+    z-index: 1;
+}
+
+/* Контент карточки — уменьшено ещё на 15% */
+.product-content {
+    position: relative;
+    z-index: 2;
+    padding: 0 14px 14px 14px;  /* было 17px → 17 × 0.85 ≈ 14px */
+}
+
+/* Product Image — уменьшено ещё на 15% */
+.product-image {
+    width: 100%;
+    height: 275px;           /* было 323px → 323 × 0.85 ≈ 275px */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.product-image img {
+    width: 85%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    border-radius: 4px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Product Info */
+.product-info {
+    padding-top: 3px;        /* было 4px → 4 × 0.85 ≈ 3px */
+}
+
+/* Product Header — уменьшено ещё на 15% */
+.product-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 14px;     /* было 17px → 17 × 0.85 ≈ 14px */
+}
+
+.product-text {
+    display: flex;
+    flex-direction: column;
+}
+
+.product-name {
+    font-size: 19px;         /* было 22px → 22 × 0.85 ≈ 19px */
+    font-weight: 400;
+    color: #1a1a1a;
+    letter-spacing: 1px;
+    line-height: 1.2;
+}
+
+.product-desc {
+    font-size: 10px;         /* было 12px → 12 × 0.85 ≈ 10px */
+    color: #2a2a2a;
+    letter-spacing: 0.5px;
+    margin-top: 3px;         /* было 4px → 4 × 0.85 ≈ 3px */
+}
+
+.product-price {
+    font-size: 16px;         /* было 19px → 19 × 0.85 ≈ 16px */
+    color: #f5f3ed;
+    font-weight: 400;
+    letter-spacing: 1px;
+}
+
+/* Product Button — уменьшено ещё на 15% */
+.product-btn {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 9px;                /* было 10px → 10 × 0.85 ≈ 9px */
+    padding: 12px 17px;      /* было 14px 20px → 14×0.85≈12, 20×0.85≈17 */
+    background-color: #f9f7e8;
+    border: none;
+    border-radius: 22px;     /* было 26px → 26 × 0.85 ≈ 22px */
+    cursor: pointer;
+    color: #4a4a2a;
+    font-size: 10px;         /* было 12px → 12 × 0.85 ≈ 10px */
+    font-family: inherit;
+    letter-spacing: 2px;
+    text-transform: lowercase;
+    transition: background-color 0.2s;
+}
+
+.product-btn:hover {
+    background-color: #f0edd8;
+}
+
+.product-btn svg {
+    stroke: #4a4a2a;
+    width: 13px;             /* было 15px → 15 × 0.85 ≈ 13px */
+    height: 13px;
+}
+
+/* Recent Orders */
+.recent-orders {
+    margin-top: 0;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    align-items: center;  /* центрирует заголовок */
+}
+.orders-btn {
+    margin-top: 24px;
+    align-self: flex-start;
+}
+.section-title {
+    font-size: 18px;
+    font-weight: 400;
+    color: #4a4a2a;
+    letter-spacing: 0.5px;
+    text-align: center;  /* на всякий случай */
+}
+.orders-btn {
+    display: block;
+    margin: 24px auto 0;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.btn-primary {
+    display: inline-block;
+    padding: 12px 28px;
+    background-color: #8fa85a;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 24px;
+    font-size: 14px;
+    letter-spacing: 0.5px;
+    transition: background-color 0.2s;
+    align-self: flex-start;
+}
+
+.btn-primary:hover {
+    background-color: #7d964d;
+}
+
+/* Footer */
+.footer {
+    background-color: #5a5a2a;
+    color: #e8e4d4;
+    padding: 50px 40px;
+    margin-top: auto;
+}
+
+.footer-content {
+    max-width: 900px;
+    margin: 0;
+}
+
+.footer-logo {
+    font-size: 20px;
+    font-weight: 400;
+    letter-spacing: 4px;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+}
+
+.footer-info {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin-bottom: 30px;
+}
+
+.footer-row {
+    display: flex;
+    gap: 30px;
+    font-size: 13px;
+    color: #c9c5b5;
+    flex-wrap: wrap;
+}
+
+.footer-link {
+    color: #c9c5b5;
+    text-decoration: underline;
+    text-decoration-color: rgba(201, 197, 181, 0.4);
+    transition: color 0.2s;
+}
+
+.footer-link:hover {
+    color: #fff;
+}
+
+.footer-nav {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.footer-nav-link {
+    color: #e8e4d4;
+    text-decoration: none;
+    font-size: 13px;
+    transition: color 0.2s;
+}
+
+.footer-nav-link:hover {
+    color: #fff;
+}
+
+/* Responsive */
+@media (max-width: 1100px) {
+    .products-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .header {
+        padding: 16px 20px;
+    }
+    
+    .main-content {
+        padding: 24px 20px;
+    }
+    
+    .nav-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .products-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .footer {
+        padding: 30px 20px;
+    }
+}

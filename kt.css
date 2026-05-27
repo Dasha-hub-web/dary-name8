@@ -1,0 +1,138 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Georgia', 'Times New Roman', serif;
+    background-color: #f5f3ed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+/* Product Card - контейнер */
+.product-card {
+    width: 340px;
+    position: relative;
+    /* Высота карточки зависит от контента */
+}
+
+/* Зелёный фон-эллипс - отдельный элемент */
+.product-bg-1 {
+    position: absolute;
+    bottom: 61px;
+    left: 0;
+    right: 0;
+    height: 146px;
+    width: 100%;
+    background-color: #8fa85a;
+    border-radius: 50%;
+    z-index: 1;
+}
+
+.product-bg-2 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 146px;
+    background-color: #8fa85a;
+    border-radius: 18px;
+    z-index: 1;
+}
+
+/* Контент карточки */
+.product-content {
+    position: relative;
+    z-index: 2;
+    padding: 0 20px 20px 20px;
+}
+
+/* Product Image */
+.product-image {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.product-image img {
+    width: 85%;
+    height: auto;
+    display: block;
+    border-radius: 4px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Product Info */
+.product-info {
+    padding-top: 5px;
+}
+
+/* Product Header */
+.product-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 20px;
+}
+
+.product-text {
+    display: flex;
+    flex-direction: column;
+}
+
+.product-name {
+    font-size: 26px;
+    font-weight: 400;
+    color: #1a1a1a;
+    letter-spacing: 1px;
+    line-height: 1.2;
+}
+
+.product-desc {
+    font-size: 14px;
+    color: #2a2a2a;
+    letter-spacing: 0.5px;
+    margin-top: 4px;
+}
+
+.product-price {
+    font-size: 22px;
+    color: #f5f3ed;
+    font-weight: 400;
+    letter-spacing: 1px;
+}
+
+/* Product Button */
+.product-btn {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    padding: 16px 24px;
+    background-color: #f9f7e8;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    color: #4a4a2a;
+    font-size: 14px;
+    font-family: inherit;
+    letter-spacing: 2px;
+    text-transform: lowercase;
+    transition: background-color 0.2s;
+}
+
+.product-btn:hover {
+    background-color: #f0edd8;
+}
+
+.product-btn svg {
+    stroke: #4a4a2a;
+}
